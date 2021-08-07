@@ -38,6 +38,7 @@ if(valor_sensor > 800 && valor_sensor < 1024 ){
   digitalWrite(alerta_amarelo, HIGH);
   digitalWrite(alerta_vermelho, LOW);
   digitalWrite(alerta_verde, LOW);
+  noTone() // para desligar o Buzzer
   
 }
 
@@ -46,6 +47,7 @@ if(valor_sensor < 400 ){
   digitalWrite(alerta_verde, HIGH);
   digitalWrite(alerta_amarelo, LOW);
   digitalWrite(alerta_vermelho, LOW);
+ noTone() // para desligar o Buzzer
   
 }
   
